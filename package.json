@@ -1,5 +1,5 @@
 {
-  "name": "starwars-names",
+  "name": "@phammikun/starwars-names",
   "version": "1.0.0",
   "description": "Random starwars names",
   "main": "src/index.js",
