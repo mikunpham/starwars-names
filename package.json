@@ -17,5 +17,10 @@
     "chai": "^4.2.0",
     "husky": "^4.3.0",
     "mocha": "^8.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test:single"
+    }
   }
 }

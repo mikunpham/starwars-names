@@ -10,7 +10,7 @@ module.exports = {
     }
 
     let randomArrayItems = [];
-    for(let i = 1; i < number; i++) {
+    for(let i = 0; i < number; i++) {
       randomArrayItems.push(getRandomItem());
     }
     return randomArrayItems;
