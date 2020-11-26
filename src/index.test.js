@@ -2,7 +2,32 @@ const { expect } = require('chai');
 const starwarsName = require('./index');
 
 describe('starwars-names', () => {
-  it('should work!', () => {
-    expect(true).to.be.true;
+  describe('all', () => {
+    it('should be an array of strings', () => {
+      expect(starwarsName.all).to.satisfy(isArrayOfStrings);
+
+      function isArrayOfStrings(array)  {
+        return array.every(item =>  typeof item === "string");
+      }
+    })
+
+    it('should include `Luke Skywalker`', () => {
+      expect(starwarsName.all).to.include('Luke Skywalker');
+    })
+  })
+
+  describe('random', () => {
+    it('should return a random item from starwarsNames.all', () => {
+      const randomItem = starwarsName.random();
+      expect(starwarsName.all).to.include(randomItem);
+    })
+
+    it('should return an array of random items if passed length', () => {
+      const randomArrayItems = starwarsName.random(3);
+      expect(randomArrayItems).to.have.length(3);
+      randomArrayItems.forEach(item => {
+        expect(starwarsName.all).to.include(item);
+      })
+    })
   })
 })
