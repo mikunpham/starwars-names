@@ -1,0 +1,12 @@
+{
+  "name": "starwars-names",
+  "version": "1.0.0",
+  "description": "Random starwars names",
+  "main": "src/index.js",
+  "repository": "git@github.com:mikunpham/starwars-names.git",
+  "author": "Pham Quan <mikun1993@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "unique-random-array": "^2.0.0"
+  }
+}
