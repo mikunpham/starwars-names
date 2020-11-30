@@ -1,6 +1,6 @@
 {
   "name": "@phammikun/starwars-names",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Random starwars names",
   "main": "dist/index.js",
   "repository": "git@github.com:mikunpham/starwars-names.git",
@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
-    "moment": "^2.29.1",
     "unique-random-array": "^2.0.0"
   },
   "devDependencies": {
@@ -28,7 +27,11 @@
     "chai": "^4.2.0",
     "husky": "^4.3.0",
     "mocha": "^8.2.1",
+    "moment": "^2.29.1",
     "rimraf": "^3.0.2"
+  },
+  "peerDependencies": {
+    "moment": "^2.29.1"
   },
   "husky": {
     "hooks": {

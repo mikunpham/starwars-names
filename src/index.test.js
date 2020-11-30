@@ -33,9 +33,8 @@ describe('starwars-names', () => {
   })
 
   describe('today', () => {
-    it('should return today date format MMMM Do YYYY, h:mm:ss a', () => {
-      var m = moment('2016-01-02T23:40:40.678');
-      expect(m.format('MMMM Do YYYY, h:mm:ss a')).to.equal('January 2nd 2016, 11:40:40 pm');
-    })
+    const today = starwarsName.today();
+    const date = new Date();
+    console.log(today);
   })
 })
