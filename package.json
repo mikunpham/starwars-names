@@ -13,11 +13,11 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "babel src --out-dir dist --copy-files --no-copy-ignored",
-    "test": "mocha --require @babel/register src/index.test.js --w",
-    "test:single": "mocha --require @babel/register src/index.test.js"
+    "test": "mocha --require @babel/register src/index.test.js"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "moment": "^2.29.1",
     "unique-random-array": "^2.0.0"
   },
   "devDependencies": {
@@ -32,7 +32,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn test:single"
+      "pre-commit": "yarn test"
     }
   }
 }

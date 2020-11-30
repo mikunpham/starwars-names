@@ -1,4 +1,5 @@
 const { expect } = require('chai');
+const moment = require('moment');
 const starwarsName = require('./index');
 
 describe('starwars-names', () => {
@@ -28,6 +29,13 @@ describe('starwars-names', () => {
       randomArrayItems.forEach(item => {
         expect(starwarsName.all).to.include(item);
       })
+    })
+  })
+
+  describe('today', () => {
+    it('should return today date format MMMM Do YYYY, h:mm:ss a', () => {
+      var m = moment('2016-01-02T23:40:40.678');
+      expect(m.format('MMMM Do YYYY, h:mm:ss a')).to.equal('January 2nd 2016, 11:40:40 pm');
     })
   })
 })

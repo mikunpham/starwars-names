@@ -1,5 +1,6 @@
 import uniqueRandomArray from 'unique-random-array';
 import starWarsNames from './starwars-names.json';
+import moment from 'moment';
 
 const getRandomItem = uniqueRandomArray(starWarsNames);
 
@@ -16,4 +17,5 @@ module.exports = {
     }
     return randomArrayItems;
   },
+  today: () => moment().format('MMMM Do YYYY, h:mm:ss a')
 }
