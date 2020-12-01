@@ -1,6 +1,6 @@
 {
   "name": "@phammikun/starwars-names",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Random starwars names",
   "main": "dist/index.js",
   "repository": "git@github.com:mikunpham/starwars-names.git",
@@ -30,9 +30,6 @@
     "mocha": "^8.2.1",
     "moment": "^2.29.1",
     "rimraf": "^3.0.2"
-  },
-  "peerDependencies": {
-    "moment": "^2.29.1"
   },
   "husky": {
     "hooks": {
